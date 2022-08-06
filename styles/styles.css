@@ -1,0 +1,114 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    padding: 32px 32px 24px 32px;
+    max-width: 310px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.img-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.img-overlay:hover{
+    opacity: 1;
+}
+
+.pr-preview {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+}
+
+h1 {
+    color: white;
+    font-size: 1.6rem;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+p.bold {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+p.signature {
+    font-size: 0.9rem;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price, .days-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eth-icon {
+    width: 11px;
+    height: 18px;
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 8px;
+    border-top: solid 1px hsl(215, 32%, 27%);
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
